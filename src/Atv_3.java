@@ -17,8 +17,8 @@ public class Atv_3 {
         for(int i = 0; i < carros; i++) {
             System.out.println("Como você avalia o carro " + (i+1) + ":");
             notas[i] = scanner.nextDouble();
-            if (notas[i] > 10 || notas[i] < 0){
-                System.out.println("Favor inserir uma nota de 1 a 10");
+            if (notas[i] > 10 || notas[i] < -1){
+                System.out.println("Insira uma nota entre 0 e 10");
                 i--;
             }
         }
